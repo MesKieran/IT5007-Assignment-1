@@ -1,0 +1,159 @@
+/* Basic CSS styling has been provided to you.
+ * For Q6, try to enhance this CSS.
+ */
+body
+{
+    font-family: Arial, sans-serif;
+    background-color: black;
+    height:100%;
+}
+h1 {
+    color: brown;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+
+nav ul li {
+    float: left;   
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: green;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+}
+
+#home {
+    height:100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px;
+    background-color: #f8f9fa; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    max-width: 800px; 
+    margin: 20px auto; 
+    line-height: 1.6;
+}
+
+#add {
+    height:100%;
+}
+
+#finish {
+    height:100%;
+}
+
+#display {
+    height:100%;
+}
+
+table {
+    margin: 1%;
+    padding: 0;
+    border: 0;
+    width: 25%;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+}
+
+thead {
+    color: white;
+    background-color:black;
+}
+
+tbody {
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    background-color:white;
+}
+
+thead th {
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+td {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+input, select, button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+table, th, td {
+    border: 3px solid white;
+}
+
+form {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+#add, #finish, #display {
+    display: none;
+}
+
+#home h1 {
+    color: #2c3e50; 
+    text-align: center;
+    font-size: 2.5em; 
+    margin-top: 50px;
+    margin-bottom: 30px; 
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.2); 
+    word-spacing: 3px; 
+    letter-spacing: 1px; 
+}
+
+#display h2 {
+    color: white;
+}
+
+#home p {
+    text-align: center;
+}
+
+

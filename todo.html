@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <title>The List that never ends</title>
+    <link rel="stylesheet" href="todo.css">
+    <script src="todo.js" defer></script>
+</head>
+<body onload="bootstrap()">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#add">Add</a></li>
+            <li><a href="#finish">Finish</a></li>
+            <li><a href="#display">Display</a></li>
+        </ul>
+    </nav>
+    <div id="container">
+        <div id="home">
+            <!-- Code for Q1 starts-->
+            <h1 id="WebHeader">Welcome to The Never-Ending List</h1>
+            <p>This is your ultimate to-do list application, designed to help you manage your tasks efficiently. Whether you need to jot down your grocery list, track your assignments, or plan your next big project, The Never-Ending List has got you covered.</p>
+            <h2>Features:</h2>
+            <ul>
+                <li>Add new tasks with ease.</li>
+                <li>Mark tasks as completed and keep track of your accomplishments.</li>
+                <li>View your outstanding and completed tasks in one place.</li>
+                <li>Simple and intuitive design for seamless navigation.</li>
+            </ul>
+            <h2>How to Use:</h2>
+            <ol>
+                <li>To add a task, navigate to the <strong>Add</strong> section.</li>
+                <li>Enter your task details and click the <strong>Add Task</strong> button.</li>
+                <li>To mark a task as completed, go to the <strong>Finish</strong> section and enter the task's serial number.</li>
+                <li>Check your progress in the <strong>Display</strong> section, where you can see both your outstanding and completed tasks.</li>
+            </ol>
+            <!-- Code for Q1 ends-->
+        </div>
+        <div id="add">
+            <h2>Add a New Task to the List</h2>
+            <form>
+            <!-- Code for Q2 starts. Accept new task from user. 
+                 Finally, when the user clicks the submit button,
+                 use the onclick event to call addfunction() in
+                 todo.js file. Note that you can use something
+                 similar to <body onload="bootstrap()"> instead of 
+                 using an addEventListener. 
+            -->
+            <form id="addTaskForm">
+                <label for="taskName">Task Name:</label>
+                <input type="text" id="taskName" name="taskName" required>
+                <label for="priority">Priority:</label>
+                <select id="priority" name="priority">
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <label for="deadline">Deadline:</label>
+                <input type="date" id="deadline" name="deadline" required>
+                <button type="button" onclick="addfunction()">Add Task</button>
+            </form>
+            
+            <!-- Code for Q2 ends -->
+            </form>
+        </div>
+        <div id="finish">
+            <h2>Select a Task to Finish</h2>
+            <form>
+            <!-- Code for Q3 starts. Finish a task given the ID/Sno. 
+                 When the user clicks the submit button, use the onclick
+                 event to call finishfunction() in todo.js file. 
+            -->
+            <form id="finishTaskForm">
+                <label for="taskID">Task Serial Number:</label>
+                <input type="number" id="taskID" name="taskID" required>
+                <button type="button" onclick="finishfunction()">Finish Task</button>
+            </form>
+            
+            <!-- Code for Q3 ends -->
+            </form>
+        </div>
+        <div id="display">
+            <!-- HTML code for Q4 has been written already.
+                 You will have to write the corresponding JS code
+                 to populate the tables. 
+                 An important design choice involves when to call the 
+                 JS function that populates the tables.
+            -->
+            <!-- Display outstanding list of Tasks -->
+            <div style="float: left; text-align: center; padding-left: 10%;">
+                <h2>Outstanding Task</h2>
+                <table id="displayoutstanding">
+                    <thead>
+                        <tr>
+                            <th>Sno</th>
+                            <th>Description</th>
+                            <th>Priority</th>
+                            <th>Deadline</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <!-- Display Completed Tasks -->
+            <div style="float: right; text-align: center; padding-right: 10%;">
+            <h2>Completed Task</h2>
+            <table id="displaycompleted">
+                <thead>
+                    <tr>
+                        <th>Sno</th>
+                        <th>Description</th>
+                        <th>Priority</th>
+                        <th>Deadline</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
